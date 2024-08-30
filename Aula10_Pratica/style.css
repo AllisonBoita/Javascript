@@ -1,0 +1,60 @@
+:root {
+    --primary-color: rgb(17, 86, 102);
+    --primary-color-darker: rgb(9, 48, 56);
+}
+  
+
+* {
+    box-sizing: border-box; /* Respeitar a borda definida no container */
+}
+
+body {
+
+    background: var(--primary-color); /* Cor de fundo */
+    font-family: 'Open sans', sans-serif; /* Tipo de Fonte */
+    font-size: 18px; /* Tamanho da Fonte */
+    line-height: 23px; /* Distancia entre linhas */
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%; /* Segue o tamanho do container */
+    margin-bottom: 10px; /* Margem entre os elementos */
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+.container {
+    max-width: 400px; /* Define o tamanho máximo do container */
+    margin: 50px auto; /* Define a margem baseada na lateral esquerda da tela */
+    background: #fff; 
+    padding: 20px; /* Borda interior do container */
+    border-radius: 10px; /* Adiciona uma "curva" nas bordas */
+}
+
+form button {
+    border: none;
+    background: var(--primary-color); 
+    color: #fff; /* Cor do texto */
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: 700; /* Tamanho da Fonte */
+    height: 50px; /* Altura do botão */
+    cursor: pointer; /* Adiciona o cursor de clique */
+    margin-top: 30px; /* Margem baseada no último elemento. */
+}
+
+form button:hover {
+    background: var(--primary-color-darker);
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+form label {
+    font-size: 19px;
+}
