@@ -1,0 +1,25 @@
+:root {
+    --primary-color: rgb(17, 86, 102);
+    --primary-color-darker: rgb(9, 48, 56);
+}
+  
+
+* {
+    box-sizing: border-box; /* Respeitar a borda definida no container */
+}
+
+body {
+
+    background: var(--primary-color); /* Cor de fundo */
+    font-family: 'Open sans', sans-serif; /* Tipo de Fonte */
+    font-size: 18px; /* Tamanho da Fonte */
+    line-height: 23px; /* Distancia entre linhas */
+}
+
+.container {
+    max-width: 400px; /* Define o tamanho máximo do container */
+    margin: 50px auto; /* Define a margem baseada na lateral esquerda da tela */
+    background: #fff; 
+    padding: 20px; /* Borda interior do container */
+    border-radius: 10px; /* Adiciona uma "curva" nas bordas */
+}
