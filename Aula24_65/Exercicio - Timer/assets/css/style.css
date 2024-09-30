@@ -3,10 +3,6 @@
     --primary-color-darker: rgb(84, 155, 160); 
 }
 
-* {
-    box-sizing: border-box;
-    outline: none;
-}
 
 body {
     background: var(--primary-color);
@@ -18,41 +14,35 @@ body {
 
 
 .container {
+    border: 5;
     max-width: 640px;
     margin: 50px auto;
     background-color: antiquewhite;
     padding: 20px;
     border-radius: 10px;
-
 }  
 
-form input, form label, form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-form input {
-    font-size: 24px;
-    height: 50px;
-    padding: 0 20px;
-}
-
-form input:focus {
-    outline: 1px solid var(--primary-color)
-}
-
-form button {
-    border: none;
+button {
+    border: 5;
+    margin: 2px;
     background: var(--primary-color);
-    color: white;
-    font-weight: 700;
-    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
     height: 50px;
     cursor: pointer;
     margin-top: 20px;
+    border-radius: 5%;
 }
 
-form button:hover {
+button:hover {
     background: var(--primary-color-darker);
+}
+
+.relogio {
+    font-size: 3em;
+}
+
+.pausado {
+    color: red;
 }
