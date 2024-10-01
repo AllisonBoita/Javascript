@@ -8,6 +8,13 @@ function criarLi() {
     return li
 }
 
+inputNovaTarefa.addEventListener('keypress', function(evento){
+    if (evento.keyCode === 13) {
+        if (!inputNovaTarefa.value) return;
+        criaTarefa(inputNovaTarefa.value)
+    }
+})
+
 function criaTarefa(textoInput) {
     const li = criarLi()
     li.innerText = textoInput
